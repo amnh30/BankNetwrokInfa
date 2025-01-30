@@ -193,4 +193,4 @@ do wr
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For queries, reach out via [email@example.com](mailto:email@example.com).
+For queries, reach out via [amn951753@gmail.com](mailto:amn951753@gmail.com).
