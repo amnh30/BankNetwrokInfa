@@ -1,0 +1,35 @@
+
+enable
+
+
+configure terminal
+
+
+hostname Router4
+
+
+line console 0
+password cisco  
+login               
+exit
+
+! Configure VTY (Telnet/SSH) password
+line vty 0 4
+password cisco     
+login                 
+exit
+
+
+banner motd #
+*******************************************
+* WARNING: Unauthorized access is prohibited! *
+* This system is for authorized users only.   *
+* All activities are logged and monitored.    *
+*******************************************
+#
+
+
+no ip domain-lookup
+service password-encryption
+
+do wr

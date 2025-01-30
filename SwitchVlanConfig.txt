@@ -1,0 +1,19 @@
+Enable 
+cisco
+conf terminal
+int range fa0/1-2
+switchport mode trunk
+exit
+vlan 40
+name Fourth_Floor
+exit
+int range fa0/3-24
+switchport mode trunk
+switchport access vlan 40
+switchport port-security
+switchport port-security maximum 2
+switchport port-security mac-address sticky
+switchport port-security violation shutdown
+do wr
+exit
+do sh start
